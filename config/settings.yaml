@@ -1,0 +1,25 @@
+plc:
+  ip: 192.168.0.29
+  rack: 0
+  slot: 1
+  timeout_ms: 2000
+escalas_entradas:
+  temperatura_min: -20.0
+  temperatura_max: 80.0
+  humedad_suelo_min: 0.0
+  humedad_suelo_max: 100.0
+  caudal_min: 0.0
+  caudal_max: 100.0
+  lluvia_min: 0.0
+  lluvia_max: 50.0
+database:
+  ruta: gemelo.db
+ubicacion:
+  latitud: 8.7479
+  longitud: -75.8814
+  zona_horaria: America/Bogota
+  ciudad: Monteria, Cordoba
+intervalos:
+  lectura_plc_segundos: 5
+  consulta_clima_minutos: 60
+  recalculo_gemelo_segundos: 30

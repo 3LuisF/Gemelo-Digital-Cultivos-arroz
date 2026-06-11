@@ -1,0 +1,5 @@
+suelo_franco_arcilloso_sinu:
+  textura: Franco-arcilloso
+  capacidad_campo: 0.32
+  punto_marchitez: 0.18
+  densidad_aparente: 1.3

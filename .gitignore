@@ -1,0 +1,29 @@
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Archivos compilados de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Base de datos local
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs generados por la aplicacion
+logs/*.log
+
+# Configuracion local (puede contener IP/credenciales propias)
+config/settings_local.yaml
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+
+# Archivos temporales del sistema operativo
+Thumbs.db
+.DS_Store

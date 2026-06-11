@@ -1,0 +1,58 @@
+# =====================================================================
+# Parametros de los cultivos soportados por el Gemelo Digital.
+# Los coeficientes de cultivo (Kc) y las etapas fenologicas se basan
+# en los valores de referencia de la FAO (Allen et al., 1998).
+#
+# Cada cultivo tiene una lista de "etapas" con:
+#   - nombre de la etapa
+#   - dia_inicio y dia_fin (dias desde la siembra)
+#   - kc: coeficiente de cultivo de esa etapa
+#
+# Tambien se define la profundidad efectiva de raiz (en metros), que se
+# usa en el balance hidrico (Thornthwaite-Mather) para saber cuanta
+# agua del suelo esta disponible para la planta.
+# =====================================================================
+
+arroz_secano:
+  nombre: "Arroz secano"
+  ciclo_dias: 120
+  profundidad_raiz_m: 0.4
+  etapas:
+    - nombre: "inicial"
+      dia_inicio: 0
+      dia_fin: 25
+      kc: 0.50
+    - nombre: "desarrollo"
+      dia_inicio: 26
+      dia_fin: 55
+      kc: 0.80
+    - nombre: "media"
+      dia_inicio: 56
+      dia_fin: 95
+      kc: 1.10
+    - nombre: "final"
+      dia_inicio: 96
+      dia_fin: 120
+      kc: 0.70
+
+maiz:
+  nombre: "Maiz"
+  ciclo_dias: 120
+  profundidad_raiz_m: 0.6
+  etapas:
+    - nombre: "inicial"
+      dia_inicio: 0
+      dia_fin: 20
+      kc: 0.40
+    - nombre: "desarrollo"
+      dia_inicio: 21
+      dia_fin: 50
+      kc: 0.80
+    - nombre: "media"
+      dia_inicio: 51
+      dia_fin: 90
+      kc: 1.15
+    - nombre: "final"
+      dia_inicio: 91
+      dia_fin: 120
+      kc: 0.60
